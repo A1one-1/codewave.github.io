@@ -1,0 +1,42 @@
+h1.head{
+  text-align: center;
+  font-size: 60px;
+  color: blueviolet;
+  text-shadow: 3px 3px greenyellow;
+}
+.drp{
+  display: inline;
+  background-color: #eee;
+  position: relative;
+}
+.btn{
+  background-color: mediumseagreen;
+  color: whitesmoke;
+  border: 2px solid aquamarine;
+  padding: 5px;
+  font-size: 20px;
+
+}
+.content{
+  display: none;
+  background-color: whitesmoke;
+  min-width: 100px;
+  
+  position: absolute;
+}
+a:hover {
+  background-color: lightgoldenrodyellow;
+}
+a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+
+}
+.show{
+  display: block;
+}
+html{
+  scroll-behavior: smooth;
+}

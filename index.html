@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8"
+        <meta name="keywords" content="coding,programming,c,c++, w3spaces, codewave">
+         <meta name="desrcription" content="programms in c language">
+        <title>code wave</title>
+        <link rel="icon" href="icon1.png">
+        <style>
+            h1.head{
+                text-align: center;
+                font-size: 60px;
+                color: blueviolet;
+                text-shadow: 3px 3px greenyellow;
+            }
+            .ex1,.expl{
+            
+                border: 5px solid rgb(41, 59, 41);
+                padding: 10px;
+                margin-bottom:5%;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+            p{
+                font-size: larger;
+            }
+            code{
+                font-size: larger;
+            }
+            .head1{
+                border: 5px hidden rgb(41, 59, 41);
+                padding: 10px;
+                margin-bottom: 5p%;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+            .last{
+                background-color: lightgrey;
+                text-align: center;
+            }
+            #author{
+                width: 40%;
+                height: 40%;
+                border: 2px double black;
+                border-radius: 15px;
+            }
+            figure{
+                border: 2px groove black;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 10%;
+                border-radius: 40px;
+            }
+            body{
+                background-color: whitesmoke;
+            }
+            #out{
+            width: 100%;
+            height: auto;}
+            .abbr{
+            text-decoration: none;}
+            drp{
+              display: inline;
+              background-color: #eee;
+              position: relative;
+              
+            }
+            .btn{
+              background-color: mediumseagreen;
+              color: whitesmoke;
+              border: 2px solid aquamarine;
+              padding: 5px;
+              font-size: 20px;
+
+            }
+            .content{
+              display: none;
+              background-color: whitesmoke;
+              min-width: 100px;
+              
+              position: absolute;
+            }
+            a:hover {
+              background-color: lightgrey;
+            }
+            a{
+              text-decoration: none;
+              color: black;
+              display: block;
+              padding: 10px;
+            
+            }
+            .show{
+              display: block;
+            }
+            html{
+              scroll-behavior: smooth;
+            }
+            
+        </style>
+        <script> function my(){
+        document.getElementById("mn").classList.toggle("show");}</script>
+    </head>
+    <body>
+         <div class="drp">
+        <button class="btn" onclick="my()">Menu</button>
+        <div class="content" id="mn">
+          <a href="https://codewave.w3spaces.com/index.html">Home</a>
+          <a href="https://codewave.w3spaces.com/programms.html">programs</a>
+          <a href="https://codewave.w3spaces.com/index.html#author">Developer</a>
+        </div>
+      </div>
+        
+        <h1 class="head">Code Wave</h1>
+        <div class="head1">
+        <h1>C Tutorial</h1>
+        <h2>Learn C</h2>
+        <p>C is a general-purpose programming language, developed in 1972, and still quite popular.
+
+            C is very powerful; it has been used to develop operating systems, databases, applications, etc.</p></div>
+        <div class="ex1">
+            <h1>Our first C program</h1>
+            <code>
+                <pre>#include&lt;stdio.h&gt;
+
+int main() {
+  printf("Hello World!");
+  return 0;
+}</pre>
+            </code>
+        <p><b> Output</b></p>
+        <img id="out" src="hello_out.png" alt="Hello world!">
+        </div>
+       <div class="expl"><h1>Explanation</h1>
+        <h2>1. #include</h2>
+        <p>In C,  all lines that start with pound (#) sign are called directives. These statements are processed by preprocessor program invoked by the compiler.
+         The #include directive tells the compiler to include a file and #include&lt;stdio.h> tells the compiler to include the header file for Standard 
+         Input Output file which contains declarations of all the standard input/output library functions.</p>
+         <h2>2. int main() </h2>
+         <p>This line is used to declare a function named "main" which returns data of integer type. A function is a group of statements that are designed to perform a specific task. Execution of every C program begins with the main() function, no matter where the function is located in the program. 
+        So, every C program must have a main() function and this is the function where the execution of program begins.</p>
+        <h2>3. { and }</h2>
+        <p>The opening braces '{' indicates the beginning of the main function and the closing braces '}' indicates the ending of the main function. 
+            Everything between these two comprises the body of the main function and are called the blocks.</p>
+            <h2>4. printf("Hello World!");</h2>
+            <p>This line tells the compiler to display the message "Hello World" on the screen. 
+            This line is called a statement in C. Every statement is meant to perform some task. A semi-colon ';' is used to end a statement. Semi-colon character at the end of the statement is used to indicate that the statement is ending there. The printf() function is used to print character stream of data on stdout console. 
+                Everything within " " is displayed to the output device.</p>
+        <h2>5. return 0;</h2>
+        <p>This is also a statement. This statement is used to return a value from a function and indicates the finishing of a function. 
+            This statement is basically used in functions to return the results of the operations performed by a function.</p>
+            <button onclick="window.print()">Download</button>
+       </div >
+       <div class="last">
+        <figure><figcaption><h2>Developer</h2></figcaption>
+        <img src="author.jpg" id="author">
+        <p><b>Mr.Chandan Gowda V</b><br> Junior Developer and Programmer<br>Studying <abbr title="Bachelor Of Engineering" >B.E</abbr>  II year <abbr title="Computer Science and Engineerig"> CSE </abbr> @ <abbr title="Visvesvavraya Technological University">VTU</abbr></p></figure>
+
+        <h2>Code Wave</h2>
+        <p><pre>&copy; 2022 Code Wave, Terms  Privacy(updated)</pre></p>
+       </div>
+       <marquee><h3>Thank you for visiting our website, here you can find c programs in future, still developing.</h3></marquee>
+    </body>
+</html>
